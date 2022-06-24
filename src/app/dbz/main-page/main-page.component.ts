@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 
-interface Personaje {
-  nombre: string;
-  poder: number;
-}
+import { Personaje } from '../interfaces/dbz.interface';
+import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-main-page',
@@ -12,12 +10,17 @@ interface Personaje {
 export class MainPageComponent {
 
   nuevo: Personaje = {
-    nombre: 'Trunks',
-    poder: 14000
-  }
+    nombre: '',
+    poder: 0
+  };
+  
+  //get personaje(): Personaje[] {
+  //  return this.dbzService.personaje;
+  //}
 
-  agregar() {
-    console.log(this.nuevo);
-    
-  }
+  //agregarNuevoPersonaje(arg: Personaje) {
+  //  this.personaje.push(arg);
+  //}
+
+  constructor(/*private dbzService: DbzService*/) {}
 }
