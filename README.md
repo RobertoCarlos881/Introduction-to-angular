@@ -1,6 +1,7 @@
 # Bases
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+This project was used to start in the world of angular, in this same directives, components and modulation were learned
+was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
 ## Development server
 
